@@ -1,0 +1,265 @@
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-area {
+    background-color: #6a4e32;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.hero-overlay h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+}
+
+.hero-overlay p {
+    font-size: 1.25rem;
+    color: #2e2c2c;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+#mainSlider {
+    width: 85%;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel-inner {
+    height: 380px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item {
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: block;
+}
+
+.c {
+    text-align: center;
+    margin: auto;
+}
+
+.c p {
+    font-weight: 500;
+    color: black;
+}
+
+.text-primary {
+    color: #926d45;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.75);
+}
+
+body footer.ftr {
+    background-color: #a99696;
+    border-top: 3px solid #6e6646;
+    margin-top: 30px;
+}
+
+footer.ftr div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+footer .btn {
+    border-radius: 6px;
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+footer .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer.ftr small {
+    display: block;
+    text-align: center;
+    font-size: 1pc;
+}
+
+@media (max-width: 576px) {
+    #mainSlider {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .carousel-inner {
+        height: 250px;
+    }
+
+    .c p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.btn-custom {
+    background-color: #6a4e32;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+.btn-custom:hover {
+    background-color: #523c26;
+    color: #ffffff;
+}
+
+.modal-content {
+    border-radius: 12px;
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #eee;
+    background-color: #f8f9fa;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.modal-body img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.modal-footer {
+    border-top: 1px solid #eee;
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+@media (max-width: 576px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
